@@ -21,7 +21,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "."},
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where="."),
     install_requires=[
         "flask>=2.0.2",
         "gunicorn>=20.1.0",
