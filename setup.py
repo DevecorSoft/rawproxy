@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="rawproxy",
-    version="0.0.3",
+    version="0.0.4",
     author="Devecor",
     author_email="devecor@outlook.com",
     description="a githubusercontent proxy tool",
@@ -22,6 +22,9 @@ setuptools.setup(
     ],
     package_dir={"": "."},
     packages=setuptools.find_packages(where="."),
+    package_data={
+        "rawproxy": ["rawproxy.service"]
+    },
     install_requires=[
         "flask>=2.0.2",
         "gunicorn>=20.1.0",
