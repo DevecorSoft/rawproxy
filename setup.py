@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="rawproxy",
-    version="0.0.6",
+    version="0.0.7",
     author="Devecor",
     author_email="devecor@outlook.com",
     description="a githubusercontent proxy tool",
