@@ -13,6 +13,7 @@ and deploy it on cloud. Accessibility improvements will make your life easier!
 ## Deploy to ubuntu server
 
 ```commandline
+python3 -m pip install rawproxy
 sudo ln -s $(python3 -m site --user-site)/rawproxy/rawproxy.service /etc/systemd/system/rawproxy.service
 sudo systemctl daemon-reload
 sudo systemctl start rawproxy.service
